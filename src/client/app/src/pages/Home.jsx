@@ -9,7 +9,7 @@ const Home = () => {
             <Image
                 className='rounded-full'
                 width={350}
-                src="./lib/image/home_image.jpg"
+                src="https://raw.githubusercontent.com/Crippao/dashboard-BUL-Project/dc3215d10d24266d7e20bbc873a5401ffb4f7d9a/src/client/app/src/lib/image/home_image.jpg"
             />
             <Title className='text-9xl mt-8'>BUL PROJECT</Title>
             <div className='text-xl mt-6'>
