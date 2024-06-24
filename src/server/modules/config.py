@@ -2,11 +2,12 @@ import os
 
 # Ottiengo il percorso assoluto della directory principale del progetto
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
+data_root = os.path.abspath(os.environ["DATA_FOLDER"])
 
 # Costruisco il percorso assoluto ai file csv
-stato_lavori_path = os.path.join(project_root, "resources", "stato_lavori.csv")
-italy_geo_path = os.path.join(project_root, "resources", "italy_geo.csv")
-pcn_route_path = os.path.join(project_root, "resources", "pcn_route.csv")
+stato_lavori_path = os.path.join(data_root, "stato_lavori.csv")
+italy_geo_path = os.path.join(data_root, "italy_geo.csv")
+pcn_route_path = os.path.join(data_root, "pcn_route.csv")
 
 
 # Imposto una funzione che mi ritorni le path dei file csv in un dizionario

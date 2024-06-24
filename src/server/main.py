@@ -1,4 +1,5 @@
 import flask
+import os
 from flask_cors import CORS
 from modules.chart_service import *
 
@@ -111,4 +112,5 @@ def endpointTen():
     return response
 
 
-app.run(host="localhost", port=5000, debug=True, use_reloader=True)
+print(os.environ)
+app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=True)
