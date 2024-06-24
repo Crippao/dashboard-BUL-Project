@@ -1,1 +1,3 @@
-# dashboard-BUL-Project
+# dashboard_BUL
+
+Il progetto Banda Ultra Larga (BUL) rappresenta un fondamentale pilastro nell'evoluzione delle infrastrutture di connettività, mirando a fornire accesso ad Internet ad alta velocità a una vasta gamma di utenti. L'obiettivo principale di questo progetto è mostrare i risultati di un'analisi dettagliata dei dati relativi alla copertura e alla programmazione dei lavori per due tecnologie chiave: la Fibra Ottica (FTTH) e il Fixed Wireless Access (FWA).
