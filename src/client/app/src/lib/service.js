@@ -1,4 +1,5 @@
-const HOSTNAME = "http://localhost:5000/api";
+const {VITE_DOMAIN, VITE_PORT}=import.meta;
+const HOSTNAME = `http://${VITE_DOMAIN}:${VITE_PORT}/api`;
 
 //National
 export async function getDataForNationalPieChartPresencePercentageAsync() {
