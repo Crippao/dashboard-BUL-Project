@@ -15,7 +15,7 @@ const App = () => {
     <Layout>
       <Navigation />
       <Layout>
-        <Content className="p-3 scroll-auto min-h-[100vh] mb-5">
+        <Content className="p-3 scroll-auto min-h-[100vh] sm:mb-[4.3rem]">
           <Outlet />
         </Content>
       </Layout>
