@@ -1,9 +1,17 @@
-version: "3.3"
+version: "3.9"
 services:
   backend:
     build: ./src/server
     ports:
       - "5000:5000"
+
+  cloudflared:
+    image: cloudflare/cloudflared
+    container_name: cloudflare-tunnel
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=eyJhIjoiMTYwMTdmZGJkMDUxZjM3NTE4MDEyOWNhYzAyMTM4MjEiLCJ0IjoiZjY0MjFhYzQtMGY4NS00ZjIxLWI3MTItNmNiZTBmMDQ2ZTlmIiwicyI6Ik9UbGlZV015WlRRdFpXTTROUzAwWldRNUxUaGxaamd0TkRRME5tWTVZMkZtTlRJeSJ9
 
   frontend:
     build: ./src/client/app

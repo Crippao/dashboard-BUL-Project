@@ -1,40 +1,34 @@
 const {VITE_DOMAIN, VITE_PORT}=import.meta.env;
-const HOSTNAME = `http://${VITE_DOMAIN}:${VITE_PORT}/api`;
-console.log({HOSTNAME, m: import.meta})
+const HOSTNAME = `https://${VITE_DOMAIN}:${VITE_PORT}/api`;
 
 //National
 export async function getDataForNationalPieChartPresencePercentageAsync() {
     const response = await fetch(HOSTNAME+"/national-pie-chart-presence-percentage");    
     const series = await response.json();
-    // console.log(series);
     return series;
 }
 
 export async function getDataForNationalColumnChartBuildingSiteOpenOrNot() {
     const response = await fetch(HOSTNAME+"/national-column-chart-building-site-open-or-not");    
     const series = await response.json();
-    // console.log(series);
     return series;
 }
 
 export async function getDataForNationalColumnChartBuildingSiteClosedAndTested() {
     const response = await fetch(HOSTNAME+"/national-column-chart-building-site-closed-and-tested");    
     const series = await response.json();
-    // console.log(series);
     return series;
 }
 
 export async function getDataForNationalColumnChartFutureBuildingSite() {
     const response = await fetch(HOSTNAME+"/national-column-chart-future-building-site");    
     const series = await response.json();
-    // console.log(series);
     return series;
 }
 
 export async function getDataForNationalDataGrid() {
     const response = await fetch(HOSTNAME+"/national-data-grid");    
     const series = await response.json();
-    // console.log(series);
     return series;
 }
 
