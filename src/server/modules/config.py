@@ -2,7 +2,8 @@ import os
 
 # Ottiengo il percorso assoluto della directory principale del progetto
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
-data_root = os.path.abspath(os.environ["DATA_FOLDER"])
+default_data = os.path.join(os.path.dirname(__file__), "../data")
+data_root = os.path.abspath(os.environ.get("DATA_FOLDER", default_data))
 
 # Costruisco il percorso assoluto ai file csv
 stato_lavori_path = os.path.join(data_root, "stato_lavori.csv")
