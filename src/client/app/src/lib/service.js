@@ -1,5 +1,6 @@
 const {VITE_DOMAIN, VITE_PORT}=import.meta.env;
-const HOSTNAME = `https://${VITE_DOMAIN}:${VITE_PORT}/api`;
+
+const HOSTNAME = `http${VITE_PORT == 443 ? "s" : "" }://${VITE_DOMAIN ?? "localhost"}:${VITE_PORT ?? 5000}/api`;
 
 //National
 export async function getDataForNationalPieChartPresencePercentageAsync() {
